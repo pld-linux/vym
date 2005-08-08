@@ -8,6 +8,7 @@ License:	GPL v2+, with explicit permission to link against Qt
 Group:		Applications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	f1d4ba9f5a2362a213f7ff90ad6cdfec
+Patch0:		%{name}-includes.patch
 URL:		http://www.insilmaril.de/vym
 BuildRequires:	qmake
 BuildRequires:	qt-devel
@@ -28,6 +29,7 @@ porz±dkowania pomys³ów...
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 qmake \
