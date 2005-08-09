@@ -37,7 +37,7 @@ qmake \
     QMAKE_LINK="%{__cxx}" \
     QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}" \
     QMAKE_RPATH=
-sed -i -e 's/-lqt\b/-lqt-mt/' Makefile
+sed -i -e 's/-lqt /-lqt-mt /' Makefile
 %{__make} \
     QTDIR=%{_prefix}
 
