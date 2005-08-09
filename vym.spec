@@ -1,4 +1,3 @@
-
 Summary:	View Your Mind, a mind mapping tool.
 Summary(pl):	View Your Mind, program do tworzenia map my¶li.
 Name:		vym
@@ -10,6 +9,7 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	f1d4ba9f5a2362a213f7ff90ad6cdfec
 Patch0:		%{name}-includes.patch
 URL:		http://www.insilmaril.de/vym
+BuildRequires:	sed >= 4.0
 BuildRequires:	qmake
 BuildRequires:	qt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,7 +37,7 @@ qmake \
     QMAKE_LINK="%{__cxx}" \
     QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}" \
     QMAKE_RPATH=
-sed -i -e 's/-lqt/-lqt-mt/' Makefile
+sed -i -e 's/-lqt\b/-lqt-mt/' Makefile
 %{__make} \
     QTDIR=%{_prefix}
 
