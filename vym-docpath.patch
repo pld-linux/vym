@@ -22,3 +22,14 @@
  	#endif
  
  	if (!QFile (docpath).exists() )
+--- vym-1.7.0/mainwindow.cpp~	2005-08-09 09:42:16.000000000 +0300
++++ vym-1.7.0/mainwindow.cpp	2005-08-09 09:52:46.000000000 +0300
+@@ -189,7 +189,7 @@
+ 		// application to open PDFs
+ 		p="/vym/mainwindow/readerPDF";
+ 		#if defined(Q_OS_LINUX)
+-			s=settings.readEntry (p,"acroread");
++			s=settings.readEntry (p,"kpdf");
+ 		#else
+ 			#if defined(Q_OS_MACX)
+ 				s=settings.readEntry (p,"/usr/bin/open");
