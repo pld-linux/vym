@@ -52,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE doc/vym.pdf demos 
+%doc LICENSE doc/vym.pdf
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
