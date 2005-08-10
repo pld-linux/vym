@@ -1,5 +1,5 @@
-Summary:	View Your Mind - a mind mapping tool.
-Summary(pl):	View Your Mind - program do tworzenia map my¶li.
+Summary:	View Your Mind - a mind mapping tool
+Summary(pl):	View Your Mind - program do tworzenia map my¶li
 Name:		vym
 Version:	1.7.0
 Release:	0.3
@@ -23,8 +23,8 @@ tasks, to get an overview over complex contexts, to sort your ideas
 etc.
 
 %description -l pl
-VYM jest narzêdziem do tworzenia i edycji map my¶li.  Wspomagaj± one
-kreatywno¶æ i efektywno¶æ pracy.  Mo¿na ich u¿ywaæ do zarz±dzania
+VYM jest narzêdziem do tworzenia i edycji map my¶li. Wspomagaj± one
+kreatywno¶æ i efektywno¶æ pracy. Mo¿na ich u¿ywaæ do zarz±dzania
 czasem, organizacji zadañ, ogarniêcia z³o¿onych problemów,
 porz±dkowania pomys³ów...
 
@@ -35,19 +35,19 @@ porz±dkowania pomys³ów...
 
 %build
 qmake \
-    QMAKE_CXX="%{__cxx}" \
-    QMAKE_LINK="%{__cxx}" \
-    QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}" \
-    QMAKE_RPATH=
+	QMAKE_CXX="%{__cxx}" \
+	QMAKE_LINK="%{__cxx}" \
+	QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}" \
+	QMAKE_RPATH=
 sed -i -e 's/-lqt /-lqt-mt /' Makefile
 %{__make} \
-    QTDIR=%{_prefix}
+	QTDIR=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
-    QTDIR=%{_prefix} \
-    INSTALL_ROOT=$RPM_BUILD_ROOT
+	QTDIR=%{_prefix} \
+	INSTALL_ROOT=$RPM_BUILD_ROOT
 
 # This is needed to be always there for Help menu to work.
 # do not move it  to _docdir, as docdir can be omited with --excludedocs at install time.
