@@ -1,5 +1,5 @@
 Summary:	View Your Mind - a mind mapping tool
-Summary(pl.UTF-8):   View Your Mind - program do tworzenia map myśli
+Summary(pl.UTF-8):	View Your Mind - program do tworzenia map myśli
 Name:		vym
 Version:	1.7.0
 Release:	0.3
