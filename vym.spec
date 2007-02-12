@@ -1,5 +1,5 @@
 Summary:	View Your Mind - a mind mapping tool
-Summary(pl):	View Your Mind - program do tworzenia map my¶li
+Summary(pl.UTF-8):   View Your Mind - program do tworzenia map myÅ›li
 Name:		vym
 Version:	1.7.0
 Release:	0.3
@@ -22,11 +22,11 @@ and effectivity. You can use them for time management, to organize
 tasks, to get an overview over complex contexts, to sort your ideas
 etc.
 
-%description -l pl
-VYM jest narzêdziem do tworzenia i edycji map my¶li. Wspomagaj± one
-kreatywno¶æ i efektywno¶æ pracy. Mo¿na ich u¿ywaæ do zarz±dzania
-czasem, organizacji zadañ, ogarniêcia z³o¿onych problemów,
-porz±dkowania pomys³ów...
+%description -l pl.UTF-8
+VYM jest narzÄ™dziem do tworzenia i edycji map myÅ›li. WspomagajÄ… one
+kreatywnoÅ›Ä‡ i efektywnoÅ›Ä‡ pracy. MoÅ¼na ich uÅ¼ywaÄ‡ do zarzÄ…dzania
+czasem, organizacji zadaÅ„, ogarniÄ™cia zÅ‚oÅ¼onych problemÃ³w,
+porzÄ…dkowania pomysÅ‚Ã³w...
 
 %prep
 %setup -q
